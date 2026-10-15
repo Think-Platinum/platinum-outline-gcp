@@ -1,0 +1,56 @@
+name: Bug report
+description: Something in this kit does not work as documented.
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Leave out secrets, private identifiers and Terraform state.
+        For a security problem, use private vulnerability reporting instead (see SECURITY.md).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. make doctor
+        2. make plan
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit
+      description: The output of `git rev-parse --short HEAD` in your copy of this repository.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Region, machine type, sign-in provider, and whether you ran it yourself or with an agent (and which one).
+  - type: textarea
+    id: output
+    attributes:
+      label: Relevant output
+      description: Remove secrets before pasting.
+      render: shell
+  - type: checkboxes
+    id: no-secrets
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have removed secrets, API keys and private identifiers from this report.
+          required: true
