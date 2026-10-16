@@ -1,0 +1,24 @@
+# Terraform working files and state. State can hold secrets: never commit it.
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Deployment settings belong to the deployer, not to this repository.
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+*-key.json
+
+# Operating system and editor files
+.DS_Store

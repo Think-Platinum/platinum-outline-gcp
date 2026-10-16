@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/Think-Platinum/platinum-outline-gcp/security/advisories/new
+    about: Report vulnerabilities privately here, never in a public issue.
+  - name: A problem with Outline itself
+    url: https://github.com/outline/outline/discussions
+    about: Questions and bugs in the Outline application belong with the Outline project.

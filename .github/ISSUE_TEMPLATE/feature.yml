@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest an improvement to this kit.
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This kit is deliberately small: one VM, one instance, Google Cloud.
+        Requests that keep it simple are the easiest to accept.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What else have you considered?
